@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a4043e-8494-4ee1-ba53-919df42e2616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PharmacyManagementSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Drug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pharmacy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TransactionStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transactions.java" afterDir="false" />
+    <list default="true" id="d9a4043e-8494-4ee1-ba53-919df42e2616" name="Changes" comment="Initializing repository">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +51,30 @@
       <option name="presentableId" value="Default" />
       <updated>1718731950673</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initializing repository">
+      <option name="closed" value="true" />
+      <created>1718740048662</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718740048662</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initializing repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initializing repository" />
   </component>
 </project>

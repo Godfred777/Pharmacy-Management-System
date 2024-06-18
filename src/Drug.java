@@ -30,4 +30,12 @@ public class Drug {
     public void setStock(int stock) {
         this.stock = stock;
     }
+
+    public void format() {
+        System.out.println(getName());
+        System.out.println(getStock());
+        System.out.println(getManufactorer());
+        System.out.println(getPrice());
+
+    }
 }
