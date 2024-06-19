@@ -4,15 +4,20 @@ public class Pharmacy {
     private ArrayList<Drug> store = new ArrayList<>();
     private Transactions transactions = new Transactions();
 
-    public int addDrug(String name, int stock, String manufacturer, double price) {
+    public void addDrug(String name, int stock, String manufacturer, double price) {
         Drug drug = new Drug(name, stock, manufacturer, price);
         this.store.add(drug);
 
-        return store.indexOf(drug);
     }
 
-    public void removeDrug(int index) {
-        this.store.remove(index);
+    public void removeDrug(String name) {
+        Drug drug = this.searchDrug(name);
+        if (drug == null) {
+            System.out.println("Drug is not in this pharmacy");
+        } else {
+            this.store.remove(drug);
+        }
+
     }
 
     public Drug searchDrug(String name) {
@@ -30,20 +35,19 @@ public class Pharmacy {
 
     }
 
-    public String buyDrug(String name, String buyer, int quantity) {
+    public void buyDrug(String name, String buyer, int quantity) {
         Drug drug = this.searchDrug(name);
-        if (drug == null) {
-            return "Drug is not found in this pharmacy";
-        }
-        if (drug.getStock() <= 0) {
-            return "Drug is empty";
-        }
-        int stock = drug.getStock();
-        int newStock = stock--;
-        drug.setStock(newStock);
+        if (drug == null || drug.getStock() <= 0) {
+            System.out.println("Drug is not found in this pharmacy");
+        } else {
+            int stock = drug.getStock();
+            int newStock = --stock;
+            drug.setStock(newStock);
 
-        transactions.addStatement(drug, quantity, buyer);
-        return transactions.toString();
+            transactions.addStatement(drug, quantity, buyer);
+            transactions.format();
+        }
+
 
     }
 

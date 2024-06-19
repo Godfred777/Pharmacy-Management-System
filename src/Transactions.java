@@ -18,5 +18,11 @@ public class Transactions {
         statement.add(info);
     }
 
+    public void format() {
+        for (TransactionStatement i: statement) {
+            System.out.println("<<<<<<<<<<<<Transactions>>>>>>>>>>");
+            i.format();
+        }
+    }
 
 }

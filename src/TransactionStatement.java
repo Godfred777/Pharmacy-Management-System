@@ -34,4 +34,11 @@ public class TransactionStatement {
         this.quantity = quantity;
     }
 
+    public void format() {
+        getDrug_code().format();
+        System.out.println(getBuyer());
+        System.out.println(getDateTime());
+        System.out.println(getQuantity());
+    }
+
 }
