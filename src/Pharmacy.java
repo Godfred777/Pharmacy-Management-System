@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Pharmacy {
-    private ArrayList<Drug> store = new ArrayList<>();
-    private Transactions transactions = new Transactions();
+    private final ArrayList<Drug> store = new ArrayList<>();
+    private final Transactions transactions = new Transactions();
 
     public void addDrug(String name, int stock, String manufacturer, double price) {
         Drug drug = new Drug(name, stock, manufacturer, price);
