@@ -4,10 +4,8 @@ public class Transactions {
     Stack<TransactionStatement> statement = new Stack<>();
     TransactionStatement transactionStatement = new TransactionStatement();
 
-    public TransactionStatement setTransactionStatement(Drug drug_code, double price, int quantity, double amount, String buyer) {
+    public TransactionStatement setTransactionStatement(Drug drug_code, int quantity, String buyer) {
         transactionStatement.setDrug_code(drug_code);
-        transactionStatement.setPrice(price);
-        transactionStatement.setAmount(amount);
         transactionStatement.setQuantity(quantity);
         transactionStatement.setBuyer(buyer);
 
@@ -15,8 +13,8 @@ public class Transactions {
 
     }
 
-    public void addStatement(Drug drug_code, double price, int quantity, double amount, String buyer) {
-        TransactionStatement info = this.setTransactionStatement(drug_code, price, quantity, amount, buyer);
+    public void addStatement(Drug drug_code, int quantity, String buyer) {
+        TransactionStatement info = this.setTransactionStatement(drug_code, quantity, buyer);
         statement.add(info);
     }
 

@@ -15,8 +15,24 @@ public class Pharmacy {
         this.store.remove(index);
     }
 
-    public String buyDrug(Drug drug) {
-        if (!this.store.contains(drug)) {
+    public Drug searchDrug(String name) {
+        try {
+            Drug d = null;
+            for (Drug drug : store) {
+                if (drug.getName().equals(name)) {
+                    d = drug;
+                    break;
+                }
+            } return d;
+        } catch (Exception e) {
+            return null;
+        }
+
+    }
+
+    public String buyDrug(String name, String buyer, int quantity) {
+        Drug drug = this.searchDrug(name);
+        if (drug == null) {
             return "Drug is not found in this pharmacy";
         }
         if (drug.getStock() <= 0) {
@@ -26,7 +42,14 @@ public class Pharmacy {
         int newStock = stock--;
         drug.setStock(newStock);
 
+        transactions.addStatement(drug, quantity, buyer);
         return transactions.toString();
 
+    }
+
+    public void format() {
+        for (Drug drug: store) {
+            drug.format();
+        }
     }
 }
