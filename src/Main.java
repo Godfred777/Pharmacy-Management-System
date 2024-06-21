@@ -1,13 +1,12 @@
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        Pharmacy pharmacy = new Pharmacy();
-        pharmacy.addDrug("Paracetamol", 120, "Ernest Chemist", 1.60);
-        pharmacy.addDrug("Cold Relief", 202, "Entrance Pharmaceuticals", 12.5);
-        pharmacy.format();
-        pharmacy.buyDrug("Cold Relief", "Kofi", 2);
-        pharmacy.buyDrug("Cough Syrup","Kofi", 1);
-        pharmacy.removeDrug("Paracetamol");
-        pharmacy.removeDrug("Cough Syrup");
-        pharmacy.format();
+        JFrame frame = new JFrame("PharmacyGUI");
+        frame.setContentPane(new PharmacyGUI().mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+
     }
 }

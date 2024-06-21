@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a4043e-8494-4ee1-ba53-919df42e2616" name="Changes" comment="Wrote the data structures and algorithms for program">
+    <list default="true" id="d9a4043e-8494-4ee1-ba53-919df42e2616" name="Changes" comment="Wrote the data structures and algorithms for program.&#10;Program about completion.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AddDrugDialog.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AddDrugDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PharmacyGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PharmacyGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pharmacy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pharmacy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TransactionStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TransactionStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transactions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,7 +80,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718758125255</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Wrote the data structures and algorithms for program.&#10;Program about completion.">
+      <option name="closed" value="true" />
+      <created>1718780362756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718780362756</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Wrote the data structures and algorithms for program.&#10;Program about completion.">
+      <option name="closed" value="true" />
+      <created>1718780499385</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718780499385</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initializing repository" />
     <MESSAGE value="Wrote the data structures and algorithms for program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote the data structures and algorithms for program" />
+    <MESSAGE value="Wrote the data structures and algorithms for program.&#10;Program about completion." />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote the data structures and algorithms for program.&#10;Program about completion." />
   </component>
 </project>
