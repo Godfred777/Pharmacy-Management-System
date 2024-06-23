@@ -1,3 +1,4 @@
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class Pharmacy {
@@ -5,8 +6,16 @@ public class Pharmacy {
     private final Transactions transactions = new Transactions();
 
     public void addDrug(String name, int stock, String manufacturer, double price) {
-        Drug drug = new Drug(name, stock, manufacturer, price);
-        this.store.add(drug);
+        try {
+            Drug drug = new Drug(name, stock, manufacturer, price);
+            drug.insertIntoDatabase();
+            this.store.add(drug);
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
 
     }
 

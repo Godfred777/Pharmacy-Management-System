@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a4043e-8494-4ee1-ba53-919df42e2616" name="Changes" comment="Wrote the data structures and algorithms for program.&#10;Program about completion.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AddDrugDialog.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AddDrugDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PharmacyGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PharmacyGUI.java" afterDir="false" />
+    <list default="true" id="d9a4043e-8494-4ee1-ba53-919df42e2616" name="Changes" comment="Writing the UI for the application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PharmacyManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PharmacyManagementSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pharmacy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pharmacy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PharmacyGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PharmacyGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TransactionStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TransactionStatement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/IdeaProjects/PharmacyManagementSystem/postgresql-42.7.3.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -96,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718780499385</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Writing the UI for the application">
+      <option name="closed" value="true" />
+      <created>1719004456953</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719004456953</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +125,22 @@
     <MESSAGE value="Initializing repository" />
     <MESSAGE value="Wrote the data structures and algorithms for program" />
     <MESSAGE value="Wrote the data structures and algorithms for program.&#10;Program about completion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote the data structures and algorithms for program.&#10;Program about completion." />
+    <MESSAGE value="Writing the UI for the application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Writing the UI for the application" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Drug.java</url>
+          <line>17</line>
+          <properties class="Drug" method="insertIntoDatabase">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

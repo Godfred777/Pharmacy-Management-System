@@ -1,8 +1,8 @@
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class TransactionStatement {
     private Drug drug_code;
-    private final LocalDateTime dateTime = LocalDateTime.now();
+    private final LocalDate date = LocalDate.now();
     private int quantity;
     private String buyer;
 
@@ -10,8 +10,8 @@ public class TransactionStatement {
         return drug_code;
     }
 
-    public LocalDateTime getDateTime() {
-        return dateTime;
+    public LocalDate getDateTime() {
+        return date;
     }
 
     public int getQuantity() {

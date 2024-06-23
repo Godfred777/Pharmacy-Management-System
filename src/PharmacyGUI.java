@@ -1,6 +1,4 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class PharmacyGUI {
     private JTextArea Heading;
@@ -10,32 +8,31 @@ public class PharmacyGUI {
     private JTextArea textArea1;
     public JPanel mainPanel;
     private JButton buyDrugButton;
+    private Pharmacy pharmacy;
 
     public PharmacyGUI() {
         addDrugButton.addActionListener(e -> {
-            AddDrugDialog dialog = new AddDrugDialog();
-            dialog.pack();
-            dialog.setVisible(true);
-            JOptionPane.showMessageDialog(null, "A new drug has been added!");
-        });
-        buyDrugButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Drug bought. Do not overdose");
+            try {
+                AddDrugDialog dialog = new AddDrugDialog();
+                dialog.pack();
+                dialog.setVisible(true);
+                JOptionPane.showMessageDialog(null, "A new drug has been added!");
+            } catch (RuntimeException exception) {
+                JOptionPane.showMessageDialog(null, exception.getMessage());
             }
         });
-        removeDrugButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        buyDrugButton.addActionListener(e -> {
+            JOptionPane.showMessageDialog(null, "Drug bought. Do not overdose");
+        });
 
-                JOptionPane.showMessageDialog(null, "Drug removed from Pharmacy");
-            }
+        removeDrugButton.addActionListener(e -> {
+            String drugName = JOptionPane.showInputDialog("Enter the name of the drug");
+            pharmacy.removeDrug(drugName);
+            JOptionPane.showMessageDialog(null, "Drug removed from Pharmacy");
         });
-        showDrugsButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "These are the list of drugs");
-            }
+
+        showDrugsButton.addActionListener(e -> {
+            JOptionPane.showMessageDialog(textArea1, pharmacy.toString());
         });
     }
 }
