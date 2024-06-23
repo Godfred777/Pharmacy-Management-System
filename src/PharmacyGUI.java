@@ -22,7 +22,10 @@ public class PharmacyGUI {
             }
         });
         buyDrugButton.addActionListener(e -> {
-            JOptionPane.showMessageDialog(null, "Drug bought. Do not overdose");
+           BuyDrugDialog dialog = new BuyDrugDialog();
+           dialog.pack();
+           dialog.setVisible(true);
+           JOptionPane.showMessageDialog(null, "Drug bought. Do not overdose");
         });
 
         removeDrugButton.addActionListener(e -> {
